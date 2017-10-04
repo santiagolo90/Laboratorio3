@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ClaseDos</title>
+</head>
+
+<body>
+    <!-- -->
+    <!-- width ancho y border borde-->
+    <table width="300px" border="1px">
+        <!-- caption es el titulo -->
+        <caption>Nuestros Cursos</caption>
+        <!-- thead parte superiro -->
+        <thead>
+            <tr>
+                <th> Tema</th>
+                <th> Precio</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <!--tbody Cuerpo-->
+            <tr>
+                <td rowspan="4"> HTML</td>
+                <!--rowspan la etiqueta td ocupa 4 filas (son iguales)-->
+                <td> $900</td>
+            </tr>
+            <tr>
+
+                <td> $900</td>
+            </tr>
+            <tr>
+
+                <td> $900</td>
+            </tr>
+            <tr>
+
+                <td> $900</td>
+            </tr>
+            <tr>
+                <td> CSS</td>
+                <td> $900</td>
+            </tr>
+            <tr>
+                <td> JAVASCRIP</td>
+                <td> $900</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <!--tfoot pie de tabla-->
+            <tr>
+                <td colspan="2"> Estan buenisimos</td>
+                <!--colspan expande en 2 columnas-->
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <h2>Archivo de video</h2>
+    <!--controls muestra controles de video, o autoplay lo auto reproduce y loop lo vuelve a reproducir automaticamente-->
+   <!-- poster agrega una imagen antes de pre cargar el video (hay que sacar el autoplay) -->
+    <video src="video/codigo.ogv" width="600px" controls autoplay loop poster="video/html5.png">
+        <!-- source src con la ubicacion/archivo y type con el ubicacion/formato hace que el navegador seleccione el indicado-->
+        <!-- mp4 primero porque safari no busca el apropiado de la lista y solo ve mp4 -->
+        <source src="video/codigo.mp4" type="video/mp4">
+        <source src="video/codigo.ogv" type="video/ogg">
+        <source src="video/codigo.ebm" type="video/webm"> 
+            Su navegador no admite video
+    </video>
+
+</body>
+
+</html>

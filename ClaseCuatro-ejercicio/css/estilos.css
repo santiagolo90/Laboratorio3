@@ -1,0 +1,22 @@
+.sinError{
+    border-color: blue;
+}
+.error{
+    border-color: red;
+}
+table{
+border-collapse: collapse;
+border: 1px solid black;
+
+}
+
+tr th{
+    background-color: #163CB9;
+    color: #E7E759;
+    border-bottom:2px dotted black;
+    
+}
+tr td{
+    color: #163CB9;
+    background-color: #E7E759;
+}

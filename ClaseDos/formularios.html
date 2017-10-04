@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <!-- form etiqueta de formularios -->
+    <!-- -->
+    <form id="miForm" action="" method="">
+        <!--fieldset es agupador de campos  -->
+        <fieldset>
+                <!-- legend es una leyenda o texto -->
+                <legend>Mis Datos</legend>
+        <!-- El servidor busca la variable nombre, el id se ve desde front end (la web)-->
+        <!-- input no lleva cierre de etiqueta -->
+        <label for="nombre">
+                ingrese nombre
+            </label>
+        <input type="text" name="nombre" id="nombre" placeholder="nombre">
+        <!-- es la discripcion del input, se relaciona con el for="" al id del input -->
+        <!-- label: texto de solo lectura, placeholder= texto casi trasnparente en el input -->
+
+        <!-- radio buton-->
+        <input type="radio" name="genero" id="genero" value="Masculino">Masculino
+        <input type="radio" name="genero" id="genero2" value="Femenino">Femenino
+        <!-- control select(lista despegable) para elegir valores tipo combo box -->
+        <select>
+            <option value ="value1">
+                Opcion 1
+            </option>
+            <option value="value2">
+                Opcion 2
+            </option>
+            <!-- crea grupos de de option -->
+            <optgroup label="LG">
+                <option value ="value3">
+                    Modelo1
+                </option>
+                <option value ="value3">
+                        Modelo1-1
+                </option>
+            </optgroup>
+            <optgroup label="Samsung">
+                <option value ="value4">
+                         Modelo2
+                </option>
+                <option value ="value4">
+                        Modelo2-2
+               </option>
+            </optgroup>
+        </select>
+
+        <br>
+        <!--Datalist Lista despegable  -->
+        <input list="marcas">
+        <datalist id="marcas">
+            <option value="Renault">
+                <option value="Ford">
+        </datalist>
+        <br>
+        <!--checkbox name referencia en el servidor -->
+        <!--para todos mis checkbox tener el mismo name pare referenciarlo en el servidor -->
+        <input type="checkbox" name="interes" value="informatica" checked/> informatica
+        <input type="checkbox" name="interes" value="politica" /> Politica
+
+        <!--Boton -->
+        <button type="button">
+            Boton
+        </button>
+        <!--Boton submite el formulario -->
+        <button type="submit">
+                submit
+        </button>
+        <!--Boton reset vacia los controles del formulario -->
+        <button type="reset">
+                reset
+        </button>
+
+        <!-- tipos de input type
+        <input type="">
+        type="color" paleta de colores
+        type="date" calendario
+        type="email"
+        type="url"
+        type="number" de que numero a que numero validaciones min="" max="" step=""
+        type="password"
+        -->
+        <br>
+        <input type="color">
+        <br>
+        <input type="date">
+        <br>
+        <input type="email">
+        <br>
+        <input type="url" placeholder="URL">
+        <br>
+        <input type="number" >
+        <br>
+        <input type="password">
+        
+        <!--pattern valida que sea  mayus minuscula y la cantidad de letras que pones en la llave -->
+        <br>
+        <input type="text" pattern="[A-Za-Z]{3}"required>
+        <!--Fin del agrupador fieldset -->
+    </fieldset>
+    </form>
+</body>
+
+</html>

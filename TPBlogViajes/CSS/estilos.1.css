@@ -1,0 +1,40 @@
+body{
+    background-color: whitesmoke;
+}
+ul li{
+    display: inline-block;
+    width: 150px;
+    background-color: chocolate;
+    padding: 5px;
+    text-align: center;
+}
+ul li a{
+    text-decoration: none;
+}
+ul li a:hover{
+    background-color: red;
+    color:white;
+}
+/*OL*/
+ol{
+    list-style:none
+}
+ul li a{
+    text-decoration: none;
+}
+ol li a:hover{
+    background-color:lightseagreen;
+    color: whitesmoke;
+}
+.sidebar{
+    float: right;
+    width: 150px;
+    text-decoration: none;
+    background-color: whitesmoke;
+    color:lightseagreen;
+    padding: 5px;
+}
+#botom{
+    width: 150px;
+    border-radius: 5px;
+}

@@ -1,0 +1,173 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    background-color: whitesmoke;
+}
+.imgArt {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 8px;
+    margin-top: 12px;
+  }
+p{
+      width: 595px; 
+      padding-top: 5px;
+      padding-bottom: 5px;  
+       
+}
+.articulo p{
+    line-height: 26px
+}
+.logo{
+    margin-left: 144px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+    
+}
+h2{
+    color:#0A5699;
+}
+/* navegador*/
+.menuPP{
+    margin-left: 182px;
+}
+.navegador{
+    display: block;
+    background-color:#0A5699;
+    margin-bottom: 15px;
+}
+
+ul, ol {
+    list-style:none;
+}
+
+.navegador li a:hover {
+    background-color:#2A89DB;;
+}
+.navegador ul li{
+    display: inline-block;
+    text-align: center;
+    
+    
+}
+.navegador li a{
+    background-color:#0A5699;
+    color:#EFDA54;
+    text-decoration:none;/*No subrayado*/
+    padding:10px 12px;
+    width: 121px;
+    display: block;
+}
+.navegador li a:hover{
+    background-color:#2A89DB;
+}
+.navegador li ul{
+    display: none;
+    position: absolute;
+}
+.navegador li:hover >ul{
+    display:block;
+}
+.navegador li ul li {
+    display: inline;
+    position:relative;
+}
+
+/*Sidebar*/
+.sidebar{
+    
+    width: 150px;
+    text-decoration: none;
+    background-color: whitesmoke;
+    color:#0A5699;
+    padding: 5px;
+    margin-top: -1005px;
+    margin-right: 364px;
+    float:right;
+}
+.sidebar a {
+    
+    text-decoration: none;
+    background-color: whitesmoke;
+    color:#0A5699;
+    display: block;
+    padding: 5px;
+}
+.sidebar a:hover {
+    
+    text-decoration: none;
+    background-color:#0A5699;
+    color:#EFDA54;
+    
+}
+/*boton leer mas*/
+.boton{
+    width: 90px;
+    margin: 5px;
+    padding: 5px 5px;
+    /*border-radius: 5px;*//*borde redondo*/
+    display: block;
+    background-color:#0A5699;
+    color:#EFDA54;
+    text-decoration: none;
+    text-align: center;
+    
+}
+.boton:hover{
+background-color:#2A89DB;
+    
+}
+article{
+    margin-left: 150px;
+    margin-right: 525px;
+}
+/*Footer*/
+footer{
+    background-color:#0A5699; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.nav2 ul{
+    margin-left: 200px;
+}
+th h2{
+    color:#EFDA54;
+}
+
+td p
+{
+    margin-left: 156px;
+    width: 312px;   
+    color:#EFDA54;  
+    padding-top: 5px; 
+}
+.derechos
+{
+    width: auto; 
+    text-align: center;   
+}
+
+/*class menu*/
+.menu{
+    background-color:#0A5699;
+    display: block;
+    position: relative;
+    
+}
+.menu li a:hover{
+    background-color:#2A89DB;
+}
+.menu li a{
+    color:#EFDA54;
+    text-decoration:none;
+    display:block;
+    padding:10px 12px;
+}
+.menu ul li{
+    display: inline-block;
+}

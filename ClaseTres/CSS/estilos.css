@@ -1,0 +1,61 @@
+/*
+https://necolas.github.io/normalize.css/ 
+*/
+*{
+    /*me auto acomoda los bordes y margin*/
+    box-sizing: border-box;
+}
+h1{
+    /*background ocupa todo el bloque, de punta a punta*/
+    background-color: blue;
+    /*ancho de los h1*/
+    width: 600px;
+}
+p{
+    background-color: red;
+}
+span{
+    background-color: yellowgreen;
+}
+div{
+    background-color: yellow;
+}
+/*
+float left lo acomoda al la izquierda
+#div1{
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: peru;
+    float: left;
+}
+
+#div2{
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 20px;
+    border: 10px dotted black;
+    background-color: #3F4ACD;
+    float: right;
+}
+*/
+#div1{
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    position:  relative;
+    top: 20px;
+    background-color: peru;
+
+    
+}
+
+#div2{
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    position:  absolute;
+    background-color: #3F4ACD;
+}

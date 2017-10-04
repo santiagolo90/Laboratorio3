@@ -1,0 +1,18 @@
+/*
+Estilos en CSS 
+hay que linkearlo en el head del html
+*/
+h1{
+    color:#6F10D2;
+}
+/* llama al id, se llama con numeral*/
+#titulo1{
+    color:pink;
+}
+/* llama a la clase, se llama con punto*/
+.naranja{
+    color:orange;
+}
+#parrafo1 , #parrafo2{
+    color:green;
+}
