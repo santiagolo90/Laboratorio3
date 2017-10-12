@@ -1,0 +1,17 @@
+cdn jquery
+instalar consola de git
+bower administrador de paquetes https://bower.io/ 
+.bowerrc para ubicacion de descargas bower
+comando: 
+npm install -g bower //-g es de manera global
+bower init
+bower search jquery //buscar
+bower install -save Jquery //o -g glogal -save lo agrega al bower.json
+bower uninstall jquery //para borrar
+
+localstorage
+.animate("left": "0px" ,"opacity":"1"),{
+    durationc "slow",
+    easing: "swing"
+})
+

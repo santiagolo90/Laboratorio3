@@ -1,0 +1,34 @@
+.sinError{
+    border-color: blue;
+}
+.error{
+    border-color: red;
+}
+table {
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid #000000;
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+
+th, td {
+    text-align: left;
+    border: 2px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: #D3D1A4;
+}
+ 
+tr:nth-child(odd) {
+    background-color: #FFFFFF;
+}
+
+th {
+    background-color: #12750E;
+    color: #EBE8B2;
+}
+td {
+    border: 1px;
+}
