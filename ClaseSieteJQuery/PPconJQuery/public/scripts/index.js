@@ -15,11 +15,13 @@ function listado() {
             //success: xhr.responseText,
             async: true,
         })
-        .done(function (objAjax) {
-            //alert("Funciono");
+        .then(function (retorno) {
             console.log(xhr);
-            MostrarGrilla(objAjax);
-        })
+            MostrarGrilla(retorno);
+        }).catch(function (retorno) {
+            console.log(retorno);
+            $("#error").html("Error : " +retorno.statusText +"/"+ retorno.status+"<br>"+retorno.responseText);	
+        });
 }
 
 function MostrarGrilla(persona) {
@@ -31,7 +33,7 @@ function MostrarGrilla(persona) {
             "<td>" + persona[index].nombre + "</td>" +
             "<td>" + persona[index].apellido + "</td>" +
             "<td> <button id=btnBorrar class=boton onclick='eliminarPersona(" + index + ")' >Borrar</button>" +
-            "<button id=btnModificar class=boton>Modificar</button></td>" +
+            "<input id=btnModificar type=button value=Modificar onclick=Modificar("+index+")></td></tr>"+
             "</tr>";
 
 
@@ -119,12 +121,13 @@ function Agregar() {
     //var apellido = document.getElementById("apellido").value;
     if (nombre == "") {
         //document.getElementById("nombre").className = "error";
-        //$("#nombre");
+        $("#nombre").addClass("error");
         alert("Debe ingresar un nombre");
         return;
     }
     if (apellido == "") {
         //document.getElementById("apellido").className = "error";
+        $("#apellido").addClass("error");
         alert("Debe ingresar un apellido");
         return;
     }
@@ -154,10 +157,12 @@ function agregarpersona(nombre, apellido) {
         async: true,
     }).then(function (retorno) {
         console.log(retorno);
+        $("#ok").html(retorno);
         listado();
 
     }).catch(function (retorno) {
-        alert("ERROR AL GUARDAR PERSONA");
+        console.log(retorno);
+        $("#error").html("Error : " +retorno.statusText +"/"+ retorno.status+"<br>"+retorno.responseText);	
     });
 
 
@@ -185,10 +190,11 @@ function eliminarPersona(indice) {
         async: true,
     }).then(function (retorno) {
         if (retorno == "Baja exitosa")
+        $("#ok").html(retorno);
         listado();
 
     }).catch(function (retorno) {
-        alert("ERROR AL BORRAR");
+        $("#error").html("Error : " +retorno.statusText +"/"+ retorno.status+"<br>"+retorno.responseText);	
     });
 }
 
@@ -203,7 +209,64 @@ function BorrarPersona() {
 }
 */
 
+
 //MODIFICAR
+function Modificar(indice) {
+    xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = Aux; //carga los campos de texto de nombre y apellido con la persona
+    xhr.open("GET","http://localhost:3000/traerpersona?indice="+indice, true);
+    xhr.send();
+    //
+    //
+    //
+    //
+    //
+}
+function Aux() {
+    var formu = document.getElementById('formu'); 
+    var n =document.getElementById('nombre'); 
+    var a =document.getElementById('apellido'); 
+
+    if(xhr.readyState == 4)
+    {
+        if(xhr.status == 200)
+        {
+           var persona = JSON.parse(xhr.response);
+           n.value = persona.nombre;
+           a.value = persona.apellido;
+        }
+    }
+}
+
+
+function modificarPersona(indice) {
+    //Obtengo nombre desde DOM
+    //Obtengo el apellido desde el DOM
+    var persona = { "nombre": nombre, "apellido": apellido };
+    var data = 'indice=' + encodeURIComponent(indice) + '&persona='
+    + encodeURIComponent(JSON.stringify(persona));
+    xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = BorrarPersona;
+    xhr.open('POST', 'http://localhost:3000/modificarpersona', true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.send(data);
+    console.log(data)
+
+    }
+
+    function BorrarPersona() {
+        if (xhr.readyState == 4) {
+            if (xhr.status == 200) {
+                if (xhr.responseText)
+                    alert(responseText);
+            }
+        }
+    }
+
+    
+
+    
+
 
 
 /*
@@ -232,7 +295,3 @@ alert('Error: ' + xhr.status + ' ' + xhr.statusText);
 }
 
 */
-
-
-
-
