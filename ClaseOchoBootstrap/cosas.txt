@@ -1,0 +1,5 @@
+pantallas: XS,SW,MD:768,LG
+row fila de bootstrap
+col-md-offset-NUMERO mueve la columna(acomoda)
+Ctrl +K +C para hacer comentario
+bootstrap glypheicons

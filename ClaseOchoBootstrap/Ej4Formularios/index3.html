@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- formulario horizontal -->
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <title>Bootstrap -Formulario Horizontal-</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <br>
+        <!-- form-horizontal -->
+        <form action="#" class="form-horizontal">
+
+            <div class="form-group">
+                <!-- control-label para poner un ancho de columna -->
+                <!-- control-label col-md-2 -->
+                <label for="nombre" class="control-label col-md-2">Nombre:</label>
+                <!-- col-md-10-->
+                <div class="col-md-10">
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre:">
+                </div>
+
+            </div>           
+
+            <div class="form-group">
+                <!-- control-label para poner un ancho de columna -->
+                <!-- control-label col-md-2 -->
+                <label for="correo" class="control-label col-md-2">Correo:</label>
+                <!-- col-md-10-->
+                <div class="col-md-10">
+                    <input type="text" class="form-control" id="correo" placeholder="Correo:">
+                </div>
+            </div>
+
+            <div class="form-group">
+                    <!-- col-md-2 col-md-offset-2 -->
+                <div class="checkbox col-md-2 col-md-offset-2">
+                    <label>
+                        <input type="checkbox">Recuerdame
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="">
+                    <!-- col-md-2 col-md-offset-2 -->
+                    <button class="btn btn-primary col-md-2 col-md-offset-2">Enviar</button>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
