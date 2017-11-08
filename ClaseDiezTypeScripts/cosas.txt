@@ -1,0 +1,11 @@
+archivo.ts
+en el index script apunta a un js con el mismo nombre que ts
+tsc -v
+npm install -g typescript
+tsc + nombre para trasprilar
+tsc - init //para crear pryecto de typescript para watcher
+tsc -w
+"use strict"; nos obliga a poner ;
+export para que vea cosas fuera de los namespace(como un publico)
+///>reference path="el path donde esta el ts"/>; // es como un using en c#
+tsc -outFile public/app.js validaciones/textos.ts validaciones/numeros.ts app.ts //evita tener que referenciar cada archivo js en un solo js en la carpeta public 

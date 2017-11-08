@@ -1,0 +1,2 @@
+Funciones de array-map filter y reduce
+https://www.mockaroo.com/
