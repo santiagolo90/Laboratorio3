@@ -1,0 +1,35 @@
+todo es publico si dejamos en blanco
+//"strict": true comentado 
+
+/// <reference path="" /> para importan jquery
+
+
+Modelo de parcial
+
+Animal.ts abstrac
+nombre
+edad
+patas
+
+Mascota.ts extends Animal
+id
+tipo
+
+enumerados.ts
+enum TipoMascota //viene de id de mascota.ts
+{
+    perro
+    gato
+    repotil
+    roedor
+    ave
+    pez
+}
+
+metodo ToJson
+
+todo en app.ts
+
+localstorage - setItem()
+             - getItem()
+             - clear()
