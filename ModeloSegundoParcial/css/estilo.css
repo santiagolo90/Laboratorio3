@@ -1,0 +1,21 @@
+/*.container-fluid{
+    width: 25%;
+    margin-left: 45px;
+}
+
+.container{
+    margin-left: 45px;
+}
+*/
+/*
+.form-group{
+    width: 25%;
+}
+*/
+.sinError{
+    border-color: blue;
+}
+.error{
+    border-color: red;
+}
+
